@@ -1,8 +1,9 @@
 import argparse
 
-parser = argparse.ArgumentParser(description= 'a generator that takes a ' +
+parser = argparse.ArgumentParser(description= 'A generator that takes a ' +
                                 'number N and returns all perfect squares less'
                                 +'than the user input')
+parser.add_argument("N", help="the number that the squares would be less than")
 parser.parse_args()
 
 def perfect_square(N):
@@ -18,8 +19,6 @@ def perfect_square(N):
     while i**2 <= N:
         yield i**2
         i += 1
-
-
 
 if __name__ == '__main__':
     user_input = input("Please type in a number: ")
