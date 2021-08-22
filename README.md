@@ -13,6 +13,7 @@ end of the sequence of movements to print
     2. How far away the Rook is from its starting point
 
 ## Files
+
 1. divide.py
 2. converting_numbers.py
 3. perfect_square.py
@@ -20,9 +21,10 @@ end of the sequence of movements to print
 5. test_python_questions.py
 
 ## divide.py
+
 This file contains the method
 
-    divisibe_five_not_seven()
+    divisible_five_not_seven()
 
 Where it takes in the parameters 'lower' and 'upper' and returns a list of
  numbers between x and y that are divisible by 5 but not by 7.
@@ -35,6 +37,7 @@ This will return a list of numbers from 4 to 90 where the numbers are
 divisible by 5 but not by 7.
 
 ## perfect_square.py
+
 This file contains the method
 
     perfect_square()
@@ -48,6 +51,7 @@ It takes in a parameter, N, and returns a list of numbers that are perfect squar
 This command will return a list of perfect squares that are less than 30.
 
 ## converting_numbers.py
+
 This file contains the method
 
     converting_base()
@@ -62,6 +66,7 @@ and b, the base that we want to convert n into.
 This command will return a binary that represents 30.
 
 ## rook_game1.py
+
 This file contains the method
 
     rook_distance()
@@ -77,3 +82,27 @@ It takes in two lists as its parameters:
 This command will return a tuple where the first value represents the distance
 traveled by the rook and the second value represents the distance between
 the rook and the starting point.
+
+## search_phrase.py
+
+This file contains the method
+
+    search_phrase_in_file()
+
+It takes in two parameters:
+    1. a text file, that it will search through
+    2. a string that it will look for in the file
+
+### How to run the rook_game1.py file:  
+
+    python search_phrase_in_file.py -d tester_file.txt -s hello
+
+This command will return a boolean, `True` if phrase in found in the file, and
+`False` if the phrase is not found.
+
+
+## test_python_questions.py
+This file contains the unit test of all of the files.
+To run the file:
+
+    python test_python_questions.py

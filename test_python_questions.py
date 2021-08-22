@@ -2,7 +2,8 @@ import unittest
 from perfect_square import perfect_square
 from rook_game1 import rook_distance
 from converting_numbers import converting_base
-
+from divide import divisible_five_not_seven
+from search_phrase import search_phrase_in_file
 class TestPerfectSquare (unittest.TestCase):
     """
     Tests the perfect_square method in perfect_square.py
@@ -61,5 +62,43 @@ class TestConvertingNumbers (unittest.TestCase):
 
         print('Finished testing converting_base()...\n')
 
+class TestDivide (unittest.TestCase):
+    """
+    This class tests the method converting_base() in divide.py
+    """
+    def test_divide(self):
+        """
+        Tests the divisibe_five_not_seven method
+        """
+        print ('Testing divisibe_five_not_seven()....')
+
+        self.assertEqual(divisible_five_not_seven(-5,40),
+        [-5,5,10,15,20,25,30,40])
+        self.assertEqual(divisible_five_not_seven(5,0), None)
+
+        print('Finished testing divisibe_five_not_seven()...\n')
+
+class TestSearchPhrase (unittest.TestCase):
+    """
+    This class tests the method search_phrase_in_file() in search_phrase.py
+    """
+    def test_search_phrase_in_file(self):
+        """
+        Tests the divisibe_five_not_seven method
+        """
+        print ('Testing divisibe_five_not_seven()....')
+
+        text_file1 = 'text_files/tester_file.txt'
+        self.assertEqual(search_phrase_in_file(text_file1,'hello'), True)
+        #tests if it passes substring test
+        self.assertEqual(search_phrase_in_file(text_file1,'test'), False)
+
+        text_file2 = 'text_files/tester_file2.txt'
+        self.assertEqual(search_phrase_in_file(text_file2,'good'), False)
+
+        no_file = 'text_file/no_file.txt'
+        self.assertEqual(search_phrase_in_file(no_file,'good'), None)
+
+        print('Finished testing divisibe_five_not_seven()...\n')
 if __name__=='__main__':
     unittest.main()

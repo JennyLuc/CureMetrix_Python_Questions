@@ -16,7 +16,7 @@ parser.add_argument('-u','--upper_limit', type=int,
 parser.parse_args()
 args = parser.parse_args()
 
-def divisibe_five_not_seven(x,y):
+def divisible_five_not_seven(x,y):
     """
     A function that takes two integers (x and y) and returns a list of numbers
     between x and y that are divisible by 5 but not by 7.
@@ -25,15 +25,10 @@ def divisibe_five_not_seven(x,y):
     :return: a list of numbers between x and y that are divisible by
     5 but not by 7
     """
-    try:
-        x = int(x)
-        y = int(y)
-
-    except ValueError:
-        print('Exiting... \nPlease input valid integers')
     if x > y:
-        return ('Exiting... \n' +
+        print ('Exiting... \n' +
         'Floor number needs to be smaller than ceiling number.')
+        return None
 
     output = []
     for i in range(x, y+1):
@@ -48,5 +43,5 @@ Main Method
 """
 if __name__ == '__main__':
 
-    output = divisibe_five_not_seven(args.lower_limit,args.upper_limit)
+    output = divisible_five_not_seven(args.lower_limit,args.upper_limit)
     print(output)
