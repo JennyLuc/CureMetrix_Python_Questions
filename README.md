@@ -19,7 +19,7 @@ end of the sequence of movements to print
 4. rook_game1.py
 5. test_python_questions.py
 
-## ivide.py
+## divide.py
 This file contains the method
 
     divisibe_five_not_seven()
