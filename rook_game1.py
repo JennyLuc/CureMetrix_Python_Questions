@@ -28,16 +28,13 @@ def rook_distance(directions,steps):
     """
 
     if len(directions) != len(steps):
-        # print([i for i in directions])
-        # print([i for i in steps])
         print('Number of directions and number of steps must match.')
         return None
     longitude = 0
     latitude = 0
     steps_taken = 0
     direction_dict = ['up', 'down', 'left', 'right']
-    # print(directions)
-    # print(steps)
+
     #iterate through the list of directions
     for direction, step in zip(directions,steps):
         if direction not in direction_dict:

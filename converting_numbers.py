@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser(description= 'A function that takes two ' +
                                 +'numbers between x and y that are divisible' +
                                 'by 5 but not by 7.')
 parser.add_argument('-n','--number', type=int,
-                    help='a number that we want to represent')
+                    help='a decimal number that we want to represent')
 parser.add_argument('-b','--base', type=int,
                     help='the base that we want to convert into')
 parser.parse_args()
