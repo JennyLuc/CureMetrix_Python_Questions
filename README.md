@@ -60,6 +60,7 @@ This command will return a binary that represents 30.
 
 This file contains the method `rook_distance()` where it takes in two lists as
  its parameters:
+
     1. a list of directions `up`, `down`, `left`, `right`
     2. a list of number of steps for each direction
 
@@ -74,6 +75,7 @@ the rook and the starting point.
 ## search_phrase.py
 
 This file contains the method `search_phrase_in_file()` where it takes in two parameters:
+
     1. a text file, that it will search through
     2. a string that it will look for in the file
 
