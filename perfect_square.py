@@ -3,8 +3,10 @@ import argparse
 parser = argparse.ArgumentParser(description= 'A generator that takes a ' +
                                 'number N and returns all perfect squares less'
                                 +'than the user input')
-parser.add_argument("N", help="the number that the squares would be less than")
+parser.add_argument("-n", "--number", type = int,
+                    help="the number that the squares would be less than")
 parser.parse_args()
+args = parser.parse_args()
 
 def perfect_square(N):
     """
@@ -21,10 +23,5 @@ def perfect_square(N):
         i += 1
 
 if __name__ == '__main__':
-    user_input = input("Please type in a number: ")
-    try:
-        user_input = int(user_input)
-        output = list(perfect_square (user_input))
-        print(output)
-    except ValueError:
-        print('Please input a valid integer')
+    output = list(perfect_square (args.number))
+    print(output)
