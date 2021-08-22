@@ -22,10 +22,7 @@ end of the sequence of movements to print
 
 ## divide.py
 
-This file contains the method
-
-    divisible_five_not_seven()
-
+This file contains the method `divisible_five_not_seven()`
 Where it takes in the parameters 'lower' and 'upper' and returns a list of
  numbers between x and y that are divisible by 5 but not by 7.
 
@@ -38,10 +35,7 @@ divisible by 5 but not by 7.
 
 ## perfect_square.py
 
-This file contains the method
-
-    perfect_square()
-
+This file contains the method `perfect_square()`
 It takes in a parameter, N, and returns a list of numbers that are perfect squares less than N.
 
 ### How to run the perfect_square.py file:  
@@ -52,11 +46,8 @@ This command will return a list of perfect squares that are less than 30.
 
 ## converting_numbers.py
 
-This file contains the method
-
-    converting_base()
-
-It takes in a parameter, n, a decimal number that we want to represent,
+This file contains the method `converting_base()`
+where it takes in a parameter, n, a decimal number that we want to represent,
 and b, the base that we want to convert n into.  
 
 ### How to run the converting_numbers.py file:  
@@ -67,12 +58,9 @@ This command will return a binary that represents 30.
 
 ## rook_game1.py
 
-This file contains the method
-
-    rook_distance()
-
-It takes in two lists as its parameters:
-    1. a list of directions (up, down, left, right)
+This file contains the method `rook_distance()` where it takes in two lists as
+ its parameters:
+    1. a list of directions `up`, `down`, `left`, `right`
     2. a list of number of steps for each direction
 
 ### How to run the rook_game1.py file:  
@@ -85,11 +73,7 @@ the rook and the starting point.
 
 ## search_phrase.py
 
-This file contains the method
-
-    search_phrase_in_file()
-
-It takes in two parameters:
+This file contains the method `search_phrase_in_file()` where it takes in two parameters:
     1. a text file, that it will search through
     2. a string that it will look for in the file
 
