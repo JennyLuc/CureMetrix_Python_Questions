@@ -61,8 +61,8 @@ This command will return a binary that represents 30.
 This file contains the method `rook_distance()` where it takes in two lists as
  its parameters:
 
-    1. a list of directions `up`, `down`, `left`, `right`
-    2. a list of number of steps for each direction
+1. a list of directions `up`, `down`, `left`, `right`
+2. a list of number of steps for each direction
 
 ### How to run the rook_game1.py file:  
 
@@ -76,8 +76,8 @@ the rook and the starting point.
 
 This file contains the method `search_phrase_in_file()` where it takes in two parameters:
 
-    1. a text file, that it will search through
-    2. a string that it will look for in the file
+1. a text file, that it will search through
+2. a string that it will look for in the file
 
 ### How to run the rook_game1.py file:  
 
